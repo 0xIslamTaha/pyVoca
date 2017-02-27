@@ -5,7 +5,7 @@ Using **pyVoca** you can get short and long description for any english words in
 
 ## Steps:
   - clone the repo.
-  - pip3 install -r requirments.txt.
+  - pip3 install -r requirements.txt.
   - python3 pyvoca.py -s $set_list_of_words.
 
 ## Example:
