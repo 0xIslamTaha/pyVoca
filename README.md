@@ -9,5 +9,5 @@ Using **pyVoca** you can get short and long description for any english words in
   - python3 pyvoca.py -s $set_list_of_words.
 
 ## Example:
-
+![Settings Window](https://github.com/islamTaha12/pyVoca/blob/master/Screenshot.png)
 
