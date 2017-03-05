@@ -66,13 +66,13 @@ class vocaCreatro:
     def print_short_description(word, short_text):
         print()
         print('{:^100}'.format(colored(word, 'cyan', attrs=['bold'])))
-        print(colored(' * SHORT DESCRIPTION : ', 'white', attrs=['bold']))
-        print(colored('  ---> %s \n' % short_text, 'white'))
+        print(colored(' * SHORT DESCRIPTION : ', 'yellow', attrs=['bold']))
+        print(colored('  ---> %s \n' % short_text, 'yellow'))
 
     @staticmethod
     def print_long_description(long_text):
-        print(colored(' * LONG DESCRIPTION : ', 'grey', attrs=['bold']))
-        print(colored('  ---> %s ' % long_text, 'grey'))
+        print(colored(' * LONG DESCRIPTION : ', 'white', attrs=['bold']))
+        print(colored('  ---> %s ' % long_text, 'white'))
 
     @staticmethod
     def write_dict():
