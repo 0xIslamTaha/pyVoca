@@ -27,5 +27,6 @@ class vocaUtil():
         print(colored(' * SENTENCE EXAMPLES : ', 'white', attrs=['bold']))
 
     def print_sentences(self, sentences):
-        for sentence in sentences:
-            print(colored('  ---> %s ' % sentence, 'white'))
+        if sentences:
+            for sentence in sentences:
+                print(colored('  ---> %s ' % sentence, 'white'))
