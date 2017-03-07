@@ -48,25 +48,23 @@ class vocaCreator(vocaUtil):
             for index in range(3):
                 sentence = data[index].getText()
                 sentences.append(sentence)
-            vocaCreator.print_sentences(sentences)
+            vocaCreator.print_sentences(self, sentences)
             return sentences
 
-    @staticmethod
-    def get_short_description(word, soup):
+    def get_short_description(self, word, soup):
         short = soup.findAll('p', attrs={'class': 'short'})
         if short:
             short_text = short[0].getText()
-            vocaCreator.print_short_description(word, short_text)
+            vocaCreator.print_short_description(self, word, short_text)
             return short_text
         else:
             print(colored(' * There is no description :( !!', 'red'))
 
-    @staticmethod
-    def get_long_description(soup):
+    def get_long_description(self, soup):
         long = soup.findAll('p', attrs={'class': 'long'})
         if long:
             long_text = long[0].getText()
-            vocaCreator.print_long_description(long_text)
+            vocaCreator.print_long_description(self, long_text)
             return long_text
 
     @staticmethod

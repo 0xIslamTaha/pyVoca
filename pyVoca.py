@@ -5,7 +5,7 @@ from voca.vocaGrabber import vocaGrabber
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', help='search for a list of new words', dest='search', default=[], action='store', nargs='+')
-    parser.add_argument('-r', help='revision random n words', dest='revision', default=-1, action='store', type=int)
+    parser.add_argument('-r', help='revision random n words', dest='revision', default=0, action='store', type=int)
     options = parser.parse_args()
 
     SEARCH_LIST = options.search
